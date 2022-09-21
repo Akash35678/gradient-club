@@ -1,0 +1,186 @@
+.navbar {
+  margin-top: 0;
+  display: flex;
+  place-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+.nav {
+  margin-left: 5px;
+}
+
+.logo {
+  size: 150px;
+  font-weight: 300;
+  font-style: italic;
+  text-decoration: chocolate;
+  color: white;
+  font-size: 1.3rem;
+  margin-left: 15px;
+  margin-top: 10;
+}
+span {
+  color: purple;
+}
+.sign_in img {
+  height: 12px;
+  width: 12px;
+}
+.points {
+  display: flex;
+}
+.points li {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-left: 5px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.points li a {
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: yellow;
+  margin: 0;
+}
+.points li ul {
+  margin: 0;
+  display: none;
+  position: absolute;
+  color: black;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 0px 0px 4px 4px;
+}
+.points li:hover ul {
+  display: block;
+  max-height: 120px;
+}
+.points li ul li {
+  margin: 0%;
+  width: 150px;
+}
+
+.points li ul li a {
+  margin: 0%;
+  color: black;
+  padding: 0%;
+  line-height: 2;
+}
+
+.points li ul li a:hover {
+  background-color: grey;
+}
+.points li a:hover {
+  color: black;
+  background-color: white;
+}
+button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  width: 100px;
+  height: 24px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+button:hover {
+  width: 110px;
+  height: 25px;
+}
+.carousel-control-prev {
+  margin-top: 247px;
+}
+.carousel-control-next {
+  margin-top: 247px;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat scroll center scroll;
+}
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.7;
+}
+carousel-caption {
+  bottom: 180px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.carousel-caption h5 {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.carousel-mainheading {
+  margin-top: 500px;
+  color: black;
+}
+.jaggubandar {
+  margin-top: 500px;
+}
+.hero-line {
+  margin-top: 0;
+}
+.logopic {
+  border-radius: 50%;
+  height: 49px;
+  margin-left: 8px;
+  width: 48px;
+}
+.carousel-caption {
+  margin-top: 0;
+}
+.hero {
+  background-color: none;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images\yannis-h-uaPaEM7MiQQ-unsplash.jpg");
+}
+.carousel-caption {
+  top: 40px;
+  bottom: auto;
+  color: white;
+  font-weight: 700;
+}
+.socialservice {
+  border-radius: 80%;
+  height: 80px;
+  width: 100px;
+  margin-left: 20px;
+}
+.services {
+  display: flex;
+  margin-left: 150px;
+  padding: 50px;
+  align-items: center;
+}
+.services1 {
+  padding-right: 50px;
+}
+.services2 {
+  padding-right: 40px;
+}
+.body {
+  background-image: linear-gradient(rgba(5, 11, 36, 0.7), rgba(4, 9, 30, 0.7));
+}
