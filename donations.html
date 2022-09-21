@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,inntial scale=1.0" />
+    <title>Donation</title>
+    <link href="dons.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img class="logopic" src="wadlogo.jpeg" alt="">        
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+  
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="Final.html">Home</a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Vision</a></li>
+                  <li><a class="dropdown-item" href="#">Mission</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Team</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Career
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="jobsfinal.html">Jobs</a></li>
+                  <li><a class="dropdown-item" href="#">Volunteers</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Internship</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Support Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="donations.html">Donate</a></li>
+                  <li><a class="dropdown-item" href="#">FAQ</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+  
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+    </section>
+    <div class="wrapper">
+      <h2>Donation form</h2>
+      <form method="POST" onsubmit="sendEmail(); reset(); return false;">
+        <h4>Account</h4>
+        <div class="input-group">
+          <div class="input-box">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Fullname"
+              required
+              class="name"
+            />
+            <i class="fa fa-user icon"></i>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Nick name" required class="name" />
+            <i class="fa fa-user icon"></i>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+            <input
+              type="email"
+              placeholder="email address"
+              required
+              class="name"
+            />
+            <i class="fa fa-envelope"></i>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+            <h4>DOB</h4>
+            <input type="text" placeholder="DD" class="dob" />
+            <input type="text" placeholder="MM" class="dob" />
+            <input type="text" placeholder="YYYY" class="dob" />
+          </div>
+          <div class="input-box">
+            <h4>Gender</h4>
+            <input type="radio" id="b1" name="gendar" checked class="radio" />
+            <label for="b1">Male</label>
+            <input type="radio" id="b2" name="gendar" checked class="radio" />
+            <label for="b2">Female</label>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+            <h4>Payment details</h4>
+            <input type="radio" name="pay" id="bc1" checked class="radio" />
+            <label for="bc1"
+              ><span><i class="fa fa-cc-visa"></i> Credit Card</span></label
+            >
+            <input type="radio" name="pay" id="bc1" checked class="radio" />
+            <label for="bc2"
+              ><span><i class="fa fa-cc-paypal"></i> Paypal</span></label
+            >
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+            <input type="tel" placeholder="Card Number" required class="name" />
+            <i class="fa fa-credit card icon"></i>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+            <input type="tel" placeholder="Card CVC" required class="name" />
+            <i class="fa fa-user icon"></i>
+          </div>
+          <div class="input-box">
+            <select>
+              <option>01 jun</option>
+              <option>02 jun</option>
+              <option>03 jun</option>
+            </select>
+            <select>
+              <option>2020</option>
+              <option>2021</option>
+              <option>2022</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+            <button type="submit">PAY NOW</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-box">
+            <img src="wadlogo.jpeg">
+              <p>For a better cause. For a better world.</p>
+          </div>
+          <div class="col-md-4 footer-box">
+            <p><b>CONTACT US</b></p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i>
+              216,Sri Hari,FirstFloor,
+              14th Main, 2nd Cross, BSK 1st Stage, 2nd Block
+            </p>
+            <p>Bengaluru-560050</p>
+            <p>Phone-080 60504070</p>
+            <p>fax: 080 22412394</p>
+            <p>E-mail: info@noblecausefoundation.co.in</p>
+            <p>Website: www.noblecausefoundation.co.in</p>
+      
+            <p>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      </section>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        Email.send({
+      Host : "smtp.yourisp.com",
+    Username : "akashvg2001@gmail.com",
+    Password : "password",
+    To : 'akashvg2001@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+      }
+    </script>
+  </body>
+</html>
